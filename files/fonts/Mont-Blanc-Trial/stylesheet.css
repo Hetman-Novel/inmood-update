@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Mont Blanc-Trial';
+    src: url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-SemiBold.eot');
+    src: url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-SemiBold.woff2') format('woff2'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-SemiBold.woff') format('woff'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mont Blanc-Trial';
+    src: url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Regular.eot');
+    src: url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Regular.woff2') format('woff2'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Regular.woff') format('woff'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mont Blanc-Trial';
+    src: url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Light.eot');
+    src: url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Light.woff2') format('woff2'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Light.woff') format('woff'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mont Blanc-Trial';
+    src: url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Thin.eot');
+    src: url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Thin.woff2') format('woff2'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Thin.woff') format('woff'),
+        url('../fonts/Mont-Blanc-Trial/MontBlanc-Trial-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
