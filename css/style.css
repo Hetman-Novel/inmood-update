@@ -250,18 +250,35 @@ main.main {
   margin-bottom: 122px;
   margin-top: 100px;
   position: relative;
+  overflow: hidden;
 }
 
-.vertical-slides::before {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
-  bottom: 0;
-  content: "";
-  height: 100%;
+.vertical-slides__slide {
+  height: 618px;
+  display: flex;
+  left: 0;
   position: absolute;
-  right: 0;
+  transition: 0.6s ease 0s;
+}
+
+.vertical-slides__slide:nth-child(1) {
   top: 0;
-  width: 100%;
+  z-index: 0;
+}
+
+.vertical-slides__slide:nth-child(2) {
+  top: 100%;
   z-index: 1;
+}
+
+.vertical-slides__slide:nth-child(3) {
+  top: 100%;
+  z-index: 2;
+}
+
+.vertical-slides__slide:nth-child(4) {
+  top: 100%;
+  z-index: 3;
 }
 
 .vertical-slides__bgImage,
@@ -276,6 +293,18 @@ main.main {
   top: 0;
   width: 100%;
   z-index: 0;
+}
+
+.vertical-slides__bgImage::before {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .vertical-slides__above-text-title {
@@ -298,12 +327,13 @@ main.main {
 }
 
 .vertical-slides__content {
+  margin: auto 0;
   max-width: 100%;
   padding: 35px calc(7% + 1px);
   position: relative;
   transform: translateY(2px);
   width: 1160px;
-  z-index: 2;
+  z-index: 102;
 }
 
 .we-help {
@@ -374,6 +404,7 @@ main.main {
 }
 
 .you-get-slider__slide-blockText {
+  max-width: 460px;
   padding-top: 20px;
 }
 
@@ -591,6 +622,96 @@ main.main {
 .interested-in-cooperation__button:hover {
   background-color: #fff;
   color: #000;
+}
+
+.resource-is-being-updated {
+  border-radius: 14px;
+  bottom: 18px;
+  display: none;
+  font-family: "Mont Blanc-Trial", sans-serif;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 44px 38px 42px;
+  position: fixed;
+  right: 20px;
+  width: 354px;
+  z-index: 100;
+}
+
+.resource-is-being-updated.show {
+  display: block;
+}
+
+.resource-is-being-updated::before {
+  background-color: rgba(39, 39, 39, 0.9);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  bottom: 0;
+  content: "";
+  left: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.resource-is-being-updated__close {
+  position: absolute;
+  right: 19px;
+  top: 16px;
+}
+
+.resource-is-being-updated__content {
+  position: relative;
+  z-index: 1;
+}
+
+.resource-is-being-updated__title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+}
+
+.resource-is-being-updated__blockText p,
+.resource-is-being-updated__wrap-tel-schedule p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 171.5%;
+  margin: 0;
+}
+
+.resource-is-being-updated__blockText {
+  padding: 25px 0 23px;
+}
+
+.resource-is-being-updated__wrap-tel-schedule p a {
+  color: inherit;
+  font-weight: 700;
+}
+
+.resource-is-being-updated__button {
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid #FFF;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  display: flex;
+  justify-content: center;
+  height: 64px;
+  margin-top: 23px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 /* Page - Just 3 steps adn 30 days to start your business fast */
@@ -1153,7 +1274,7 @@ main.main {
 }
 
 .blanche-furniture {
-  overflow: hidden;
+  overflow: visible;
   margin-bottom: 100px;
   margin-top: 105px;
 }
@@ -1776,6 +1897,48 @@ main.main {
 .blanche-mood.for-page-mood-showroom .target-audience__item-column p {
   opacity: 1;
   font-weight: 500;
+}
+
+.your-mood {
+  margin-bottom: 197px;
+  margin-top: 229px;
+}
+
+.your-mood__blockHead {
+  height: 455px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 537px;
+}
+
+.your-mood__blockHead svg,
+.your-mood__blockHead img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.your-mood__blockText {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+  padding-top: 35px;
+}
+
+.your-mood__blockText p {
+  color: #272727;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 154.5%;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.your-mood__blockText p:last-child {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  margin-top: 29px;
 }
 
 /* Footer */
@@ -3527,5 +3690,12 @@ main.main {
 
   .target-audience__title {
     font-size: 47px;
+  }
+}
+
+@media (any-hover: hover) {
+  .resource-is-being-updated__button:hover {
+    background-color: #fff;
+    color: #000;
   }
 }
