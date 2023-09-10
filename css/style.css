@@ -1274,7 +1274,7 @@ main.main {
 }
 
 .blanche-furniture {
-  overflow: visible;
+  overflow: hidden;
   margin-bottom: 100px;
   margin-top: 105px;
 }
@@ -1797,6 +1797,10 @@ main.main {
   font-style: normal;
 }
 
+.mood-showroom {
+  overflow: hidden;
+}
+
 .mood-showroom__block {
   padding-bottom: 55%;
   padding-left: 61px;
@@ -1897,6 +1901,10 @@ main.main {
 .blanche-mood.for-page-mood-showroom .target-audience__item-column p {
   opacity: 1;
   font-weight: 500;
+}
+
+.blanche-is.for-page-mood-showroom {
+  margin-top: 150px;
 }
 
 .your-mood {
@@ -2136,6 +2144,10 @@ main.main {
   }
 
   .furniture-that-needs__items.mobile {
+    display: none;
+  }
+
+  .mood-showroom__block .section-title .mobile {
     display: none;
   }
 }
@@ -2467,6 +2479,30 @@ main.main {
     margin-top: 66px;
   }
 
+  .mood-showroom__block {
+    padding-bottom: 66%;
+    padding-left: 72px;
+  }
+
+  .mood-showroom__block .section-title {
+    font-size: 90px;
+  }
+
+  .mood-showroom__blockText {
+    margin-top: 55px;
+    padding: 6px 0 1px 17px;
+  }
+
+  .mood-showroom__blockText p:nth-child(2) {
+    color: #FFF;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .target-audience.for-page-mood-showroom .mood-ukrainian-furniture__block {
+    padding-bottom: calc(55% - 7px);
+  }
+
   .footer__item:nth-child(1) {
     width: 23%;
   }
@@ -2577,6 +2613,13 @@ main.main {
 
   .mood-features__item:nth-child(3n+3) {
     display: none;
+  }
+
+  .mood-showroom__blockText p:nth-child(1) {
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
   }
 }
 
@@ -2855,6 +2898,50 @@ main.main {
   .wrap-interested-in-cooperation .interested-in-cooperation__blockText {
     max-width: 415px;
   }
+
+  .our-cooperation-with-dealers.for-page-mood-showroom {
+    margin-top: 90px;
+  }
+
+  .target-audience.for-page-mood-showroom {
+    margin-top: 90px;
+  }
+
+  .target-audience.for-page-mood-showroom .section-title {
+    bottom: 205px !important;
+    right: -167px !important;
+  }
+
+  .blanche-mood.for-page-mood-showroom {
+    margin-bottom: 44px;
+    margin-top: 143px;
+  }
+
+  .blanche-mood.for-page-mood-showroom .target-audience__items {
+    margin-top: 35px;
+  }
+
+  .furniture-that-needs.for-page-mood-showroom {
+    margin-bottom: 107px;
+  }
+
+  .your-mood {
+    margin-bottom: 88px;
+    margin-top: 153px;
+  }
+
+  .your-mood__blockHead {
+    max-height: 318px;
+    max-width: 376.211px;
+  }
+
+  .your-mood__blockText {
+    max-width: 469px;
+  }
+
+  .your-mood__blockText p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -2982,6 +3069,10 @@ main.main {
   .mood-production .section-title {
     font-size: 72px;
   }
+
+  .mood-showroom__block .section-title {
+    font-size: 72px;
+  }
 }
 
 @media screen and (max-width: 700.98px) {
@@ -3099,6 +3190,10 @@ main.main {
   .wrap-interested-in-cooperation .interested-in-cooperation .section-title {
     font-size: 58px;
     line-height: 110%;
+  }
+
+  .target-audience.for-page-mood-showroom .mood-ukrainian-furniture__block {
+    display: block;
   }
 }
 
@@ -3639,6 +3734,116 @@ main.main {
     line-height: 160%;
   }
 
+  .mood-showroom__block {
+    padding-bottom: 140%;
+    padding-left: 19px;
+  }
+
+  .mood-showroom__block-content {
+    transform: translateY(-27%);
+  }
+
+  .mood-showroom__block .section-title {
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 98.5%;
+    max-width: 300px;
+  }
+
+  .mood-showroom__block .section-title .desktop {
+    display: none;
+  }
+
+  .mood-showroom__blockText {
+    margin-top: 123px;
+  }
+
+  .mood-showroom__blockText p:nth-child(1) {
+    font-size: 10px;
+    margin-bottom: 11px;
+  }
+
+  .mood-showroom__blockText p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .target-audience.for-page-mood-showroom .section-title {
+    bottom: 174px !important;
+    font-size: 58px;
+    right: -154px !important;
+  }
+
+  .target-audience.for-page-mood-showroom .mood-ukrainian-furniture__block {
+    padding-bottom: calc(82% - 2px);
+  }
+
+  .blanche-mood.for-page-mood-showroom {
+    margin-bottom: 0;
+    margin-top: 92px;
+  }
+
+  .furniture-that-needs.for-page-mood-showroom {
+    margin-bottom: 66px;
+    margin-top: -10px;
+  }
+
+  .furniture-that-needs.for-page-mood-showroom .section-title {
+    text-transform: none;
+  }
+
+  .furniture-that-needs.for-page-mood-showroom .section-title br {
+    display: none;
+  }
+
+  .blanche-is.for-page-mood-showroom {
+    margin-bottom: 58px;
+    margin-top: 80px;
+  }
+
+  .blanche-is.for-page-mood-showroom .section-title {
+    color: #2A2D2F;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 123%;
+    text-transform: none;
+  }
+
+  .blanche-is.for-page-mood-showroom .section-title span {
+    color: inherit;
+    -webkit-text-stroke: 0;
+  }
+
+  .blanche-is.for-page-mood-showroom .section-title br {
+    display: none;
+  }
+
+  .your-mood {
+    margin-bottom: 59px;
+    margin-top: 58px;
+  }
+
+  .your-mood__blockHead {
+    max-height: 190px;
+    max-width: 224px;
+  }
+
+  .your-mood__blockText {
+    max-width: 335px;
+    padding-top: 25px;
+  }
+
+  .your-mood__blockText p {
+    font-size: 12px;
+    line-height: 160%;
+  }
+
+  .your-mood__blockText p:last-child {
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    margin-top: 25px;
+  }
+
   .footer__items {
     padding-bottom: 24px;
     padding-left: 33px;
@@ -3690,6 +3895,14 @@ main.main {
 
   .target-audience__title {
     font-size: 47px;
+  }
+
+  .mood-showroom__block-content {
+    transform: translateY(-44%);
+  }
+
+  .mood-showroom__blockText {
+    margin-top: 80px;
   }
 }
 
