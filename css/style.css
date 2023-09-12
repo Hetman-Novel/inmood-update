@@ -1820,14 +1820,15 @@ main.main {
 }
 
 .wrap-running-lines {
-  padding-bottom: 100px;
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .running-lines {
   display: block;
   margin: 14px 0;
   padding: 5px 0;
+  overflow: hidden;
 }
 
 .running-lines__text {
