@@ -3258,6 +3258,10 @@ main.main {
   top: 7px;
 }
 
+.fill-out-this-form__wrap-phone .country-phone-selected .flag.flag-ua {
+  z-index: 5;
+}
+
 .fill-out-this-form__wrap-phone .country-phone-options .country-phone-search {
   height: 44px;
   width: 100%;
