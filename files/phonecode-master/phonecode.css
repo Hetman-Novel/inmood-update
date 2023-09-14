@@ -1,6 +1,5 @@
 .country-phone-options {display: none; position: absolute; width: 280px; max-height: 480px; overflow-y: scroll; margin-top: 20px; z-index: 600; border: 1px solid #ccc;}
-.country-phone-selected {cursor: pointer; background: white; float: left; height: 20px; min-width: 35px; width: auto; padding-left: 20px;
-    /*background: url('arrow-down.png') no-repeat;*/
+.country-phone-selected {cursor: pointer; background: white; float: left; height: 20px; min-width: 35px; width: auto; padding-left: 20px;}
 }
 .country-phone-option {cursor: pointer; background: white; padding: 2px 0;}
 .country-phone-option:hover, .country-phone-option.hovered {background: #77cbff;}

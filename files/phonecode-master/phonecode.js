@@ -128,7 +128,7 @@ var countryRequesting = false;
 
                 var option = $('<div data-phone="'+
                     country.ph + '" data-co="'+ prefCountry.toLowerCase() +'"' +
-                    ' class="country-phone-option"><span>+'+ country.ph +'<img src="blank.gif" class="flag flag-'+
+                    ' class="country-phone-option"><span>+'+ country.ph +'<img src="#" class="flag flag-'+
                     country.co +
                     '"></span>'+ country.na +'</div>'
                 );
