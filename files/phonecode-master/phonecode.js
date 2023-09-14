@@ -37,7 +37,7 @@ var countryRequesting = false;
         _loadData : function() {
             var self = this;
             if(!countryCache && !countryRequesting) {
-                countryRequesting = $.getJSON('countries.json', {})
+                countryRequesting = $.getJSON('files/phonecode-master/countries.json', {})
                     .done(function(json) {
                         self.data = json;
                         countryCache = self.data;
@@ -128,9 +128,7 @@ var countryRequesting = false;
 
                 var option = $('<div data-phone="'+
                     country.ph + '" data-co="'+ prefCountry.toLowerCase() +'"' +
-                    ' class="country-phone-option"><span>+'+ country.ph +'<img src="#" class="flag flag-'+
-                    country.co +
-                    '"></span>'+ country.na +'</div>'
+                    ' class="country-phone-option"><span>+'+ country.ph + '<img src="files/phonecode-master/blank.gif" class="flag flag-'+ country.co + '"></span>'+ country.na +'</div>'
                 );
                 $(option).appendTo(options);
                 if(this.options.preferCo && (this.options.preferCo != undefined)) {
@@ -145,8 +143,7 @@ var countryRequesting = false;
                 }
             }
             if(selected) {
-                this.container.find('.country-phone-selected')
-                    .html('<img src="blank.gif" class="flag flag-'+ selected.co +'">+'+ selected.ph);
+                this.container.find('.country-phone-selected').html('<img src="files/phonecode-master/blank.gif" class="flag flag-'+ selected.co +'">+'+ selected.ph);
             }
             $(selector).bind('click', function(e){
                 self._toggleSelector();
