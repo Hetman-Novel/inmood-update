@@ -4,16 +4,176 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20230914205819">
-   <link rel="stylesheet" href="files/css/style.css?_v=20230914205819">
-   <link rel="stylesheet" href="files/css/update-09.08.2023.css?_v=20230914205819">
-   <link rel="stylesheet" href="css/style.min.css?_v=20230914205819">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20231004195834">
+   <link rel="stylesheet" href="files/css/style.css?_v=20231004195834">
+   <link rel="stylesheet" href="files/css/update-09.08.2023.css?_v=20231004195834">
+   <link rel="stylesheet" href="files/css/popup.css?_v=20231004195834">
+   <link rel="stylesheet" href="css/style.min.css?_v=20231004195834">
    <link rel="icon" type="image/svg+xml" href="favicon.svg">
    <title>Виробництво MOOD</title>
 </head>
 <body>
     <div class="wrapper new-page">
-        
+        <header>
+    <div class="header-wrapper">
+        <div class="top-line fixed-line">
+            <div class="container">
+                <div class="row-container">
+                    <div class="left flex">
+                        <span class="burger-btn"><span></span><span></span><span></span></span>
+                        <div class="with-drop lang-wrapper"> <!-- '.lang-select-button' for open in popup -->
+                            <span class="current">ru</span>
+                            <div class="drop-inner lang-list">
+                                <a href="https://inmood.com.ua/en/for-designers-and-architects/" class="a">en</a>
+                                <a href="https://inmood.com.ua/for-designers-and-architects/" class="a">uk</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <a href="https://inmood.com.ua/ru/" class="logo">
+                            <img src="https://inmood.com.ua/wp-content/uploads/2022/07/logo.svg" alt="">
+                            <span class="txt">STAY IN MOOD</span>
+                        </a>
+                    </div>
+                    <div class="right flex">
+                        <div id="show-phones-mobile" class="header__icon-tel">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.4 20.75H18.17C15.5788 20.4681 13.0893 19.5846 10.9 18.17C8.86618 16.8747 7.13938 15.1513 5.84 13.12C4.42216 10.925 3.53852 8.42823 3.26 5.83001C3.22816 5.52011 3.2596 5.20696 3.35243 4.90958C3.44525 4.6122 3.59752 4.33677 3.8 4.10001C3.99694 3.86008 4.24002 3.66211 4.51486 3.51782C4.78969 3.37354 5.09068 3.28587 5.4 3.26001H8C8.56312 3.26058 9.10747 3.46248 9.53476 3.82925C9.96205 4.19602 10.2441 4.70349 10.33 5.26001C10.425 5.97489 10.6028 6.67628 10.86 7.35001C11.0164 7.77339 11.0487 8.23264 10.9531 8.67375C10.8574 9.11485 10.6378 9.51947 10.32 9.84001L9.71 10.45C10.6704 11.9662 11.9587 13.2477 13.48 14.2L14.09 13.6C14.4105 13.2822 14.8152 13.0626 15.2563 12.9669C15.6974 12.8713 16.1566 12.9036 16.58 13.06C17.2545 13.3148 17.9556 13.4926 18.67 13.59C19.236 13.6751 19.7515 13.9638 20.1198 14.402C20.488 14.8403 20.6837 15.3978 20.67 15.97V18.37C20.67 18.9942 20.4227 19.593 19.9823 20.0353C19.5419 20.4776 18.9442 20.7274 18.32 20.73L18.4 20.75ZM8 4.75001H5.61C5.49265 4.75777 5.37809 4.78924 5.27325 4.84252C5.1684 4.8958 5.07545 4.96979 5 5.06001C4.92658 5.14452 4.871 5.24302 4.83663 5.34957C4.80226 5.45612 4.7898 5.56852 4.8 5.68001C5.04249 8.03679 5.83362 10.304 7.11 12.3C8.28664 14.1467 9.85332 15.7134 11.7 16.89C13.6973 18.1798 15.967 18.9878 18.33 19.25C18.4529 19.2569 18.5759 19.2383 18.6912 19.1953C18.8065 19.1522 18.9117 19.0857 19 19C19.1592 18.8368 19.2489 18.6181 19.25 18.39V16C19.2545 15.7896 19.1817 15.5848 19.0453 15.4244C18.9089 15.2641 18.7184 15.1593 18.51 15.13C17.6839 15.0189 16.8724 14.8177 16.09 14.53C15.9359 14.4724 15.7686 14.4596 15.6075 14.4933C15.4464 14.5269 15.2982 14.6055 15.18 14.72L14.18 15.72C14.0629 15.8342 13.912 15.9076 13.7499 15.9292C13.5877 15.9508 13.423 15.9195 13.28 15.84C11.1462 14.6342 9.37997 12.8715 8.17 10.74C8.08718 10.598 8.05402 10.4324 8.07575 10.2694C8.09748 10.1065 8.17286 9.95538 8.29 9.84001L9.29 8.84001C9.40468 8.72403 9.48357 8.57751 9.51726 8.41793C9.55095 8.25835 9.53802 8.09244 9.48 7.94001C9.19119 7.15799 8.98997 6.34637 8.88 5.52001C8.85519 5.30528 8.75133 5.10747 8.58865 4.96513C8.42597 4.82278 8.21613 4.7461 8 4.75001Z" fill="#000000"></path>
+                            </svg>
+                        </div>
+                        <div class="with-drop phones-wrapper"> <!-- '.phones-button' for open in popup -->
+                            <a href="tel:+380 44 233 43 91" class="current a">+380 44 233 43 91</a>
+                            <div class="drop-inner phones-list"></div>
+                        </div>
+                        <span class="search icon-button search-button" style="display: none;"></span>
+                        <span class="bag icon-button cart-button"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="search-block drop">
+                <div class="container">
+                        <div class="row">
+                        <div class="col-12">
+                            <form action="/ru" method="get" class="search-form">
+                                <input type="text" name="s" id="search" class="txt" value="" placeholder="Введите ключевое слово">
+                                <input type="submit" class="sbmt">
+                            </form>                 
+                        </div>
+                    </div>
+                </div>         
+            </div>
+            <div class="dropdown-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-lg-12">
+                            <div class="bg">
+                                <div class="cat-links">
+                                    <div class="row-container">
+                                        <a href="https://inmood.com.ua/ru/catalog/" class="cat-link catalog-link">
+                                            <div class="ico-wrp">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                                    <g clip-path="url(#clip0_1502_8432)">
+                                                        <path d="M10.7812 14.9375C11.9721 14.9375 12.9375 13.9721 12.9375 12.7812C12.9375 11.5904 11.9721 10.625 10.7812 10.625C9.59039 10.625 8.625 11.5904 8.625 12.7812C8.625 13.9721 9.59039 14.9375 10.7812 14.9375Z" fill="#272727"></path>
+                                                        <path d="M23.0078 14.9375C24.1987 14.9375 25.1641 13.9721 25.1641 12.7812C25.1641 11.5904 24.1987 10.625 23.0078 10.625C21.8169 10.625 20.8516 11.5904 20.8516 12.7812C20.8516 13.9721 21.8169 14.9375 23.0078 14.9375Z" fill="#272727"></path>
+                                                        <path d="M35.2188 14.9375C36.4096 14.9375 37.375 13.9721 37.375 12.7812C37.375 11.5904 36.4096 10.625 35.2188 10.625C34.0279 10.625 33.0625 11.5904 33.0625 12.7812C33.0625 13.9721 34.0279 14.9375 35.2188 14.9375Z" fill="#272727"></path>
+                                                        <path d="M10.7812 27.1562C11.9721 27.1562 12.9375 26.1909 12.9375 25C12.9375 23.8091 11.9721 22.8438 10.7812 22.8438C9.59039 22.8438 8.625 23.8091 8.625 25C8.625 26.1909 9.59039 27.1562 10.7812 27.1562Z" fill="#272727"></path>
+                                                        <path d="M23.0078 27.1562C24.1987 27.1562 25.1641 26.1909 25.1641 25C25.1641 23.8091 24.1987 22.8438 23.0078 22.8438C21.8169 22.8438 20.8516 23.8091 20.8516 25C20.8516 26.1909 21.8169 27.1562 23.0078 27.1562Z" fill="#272727"></path>
+                                                        <path d="M35.2188 27.1562C36.4096 27.1562 37.375 26.1909 37.375 25C37.375 23.8091 36.4096 22.8438 35.2188 22.8438C34.0279 22.8438 33.0625 23.8091 33.0625 25C33.0625 26.1909 34.0279 27.1562 35.2188 27.1562Z" fill="#272727"></path>
+                                                        <path d="M10.7812 39.375C11.9721 39.375 12.9375 38.4096 12.9375 37.2188C12.9375 36.0279 11.9721 35.0625 10.7812 35.0625C9.59039 35.0625 8.625 36.0279 8.625 37.2188C8.625 38.4096 9.59039 39.375 10.7812 39.375Z" fill="#272727"></path>
+                                                        <path d="M23.0078 39.375C24.1987 39.375 25.1641 38.4096 25.1641 37.2188C25.1641 36.0279 24.1987 35.0625 23.0078 35.0625C21.8169 35.0625 20.8516 36.0279 20.8516 37.2188C20.8516 38.4096 21.8169 39.375 23.0078 39.375Z" fill="#272727"></path>
+                                                        <path d="M35.2188 39.375C36.4096 39.375 37.375 38.4096 37.375 37.2188C37.375 36.0279 36.4096 35.0625 35.2188 35.0625C34.0279 35.0625 33.0625 36.0279 33.0625 37.2188C33.0625 38.4096 34.0279 39.375 35.2188 39.375Z" fill="#272727"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1502_8432">
+                                                            <rect width="46" height="46" fill="#272727"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <span class="lbl">Каталог</span>
+                                        </a>
+                                        <a href="https://inmood.com.ua/ru/catalog/dyvany/" class="cat-link">
+                                            <div class="ico-wrp">
+                                            <!--?xml version="1.0" encoding="UTF-8"?--> <svg xmlns="http://www.w3.org/2000/svg" width="78" height="58" viewBox="0 0 78 58" fill="none"><path class="path" d="M18.8203 15H38.9344V24.8449" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M59.0391 15H38.925V24.8449" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M16.0779 15V30.9034H62.5259V15.2524H69.8465V38.224H8V15H16.0779Z" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M18.9453 26.6172L58.842 26.6172" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M12.5 39V43" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M65.5 39V43" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>                 </div>
+                                            <span class="lbl">Диваны</span>
+                                        </a>
+                                        <a href="https://inmood.com.ua/ru/catalog/krovaty/" class="cat-link">
+                                            <div class="ico-wrp">
+                                                <!--?xml version="1.0" encoding="UTF-8"?--> <svg xmlns="http://www.w3.org/2000/svg" width="78" height="58" viewBox="0 0 78 58" fill="none"><path class="path" d="M13.5 40L12.5 43" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M65.5 40L66.5 43" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M19.5 29V15H58.5V29" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M65.2858 33.0809V30.4609H13.5078V32.9906" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><rect class="path" x="10.5" y="34" width="57" height="6" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect><path class="path" d="M22.6875 28.2968C29.079 24.2291 32.9257 25.4835 38.0267 28.2968" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M40.7812 28.2968C47.1728 24.2291 51.0195 25.4835 56.1205 28.2968" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>                 </div>
+                                            <span class="lbl">Кровати</span>
+                                        </a>
+                                        <a href="https://inmood.com.ua/ru/catalog/detskye-krovaty-ru/" class="cat-link">
+                                            <div class="ico-wrp">
+                                                <!--?xml version="1.0" encoding="UTF-8"?--> <svg xmlns="http://www.w3.org/2000/svg" width="78" height="58" viewBox="0 0 78 58" fill="none"><path d="M34.5881 35.3882C33.9145 36.591 32.9928 37.486 32.0832 37.9774C31.1666 38.4726 30.3566 38.518 29.7757 38.2285C29.1947 37.9391 28.7779 37.2824 28.6949 36.2892C28.6124 35.3035 28.8767 34.0809 29.5503 32.8781C30.2239 31.6753 31.1456 30.7802 32.0552 30.2888C32.9719 29.7937 33.7818 29.7483 34.3628 30.0377C34.9437 30.3272 35.3605 30.9838 35.4436 31.9771C35.526 32.9627 35.2617 34.1854 34.5881 35.3882Z" fill="#F9F9F9" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M42.9353 35.3882C43.6089 36.591 44.5306 37.486 45.4402 37.9774C46.3569 38.4726 47.1668 38.518 47.7478 38.2285C48.3287 37.9391 48.7455 37.2824 48.8286 36.2892C48.911 35.3035 48.6467 34.0809 47.9731 32.8781C47.2995 31.6753 46.3778 30.7802 45.4682 30.2888C44.5516 29.7937 43.7416 29.7483 43.1607 30.0377C42.5797 30.3272 42.1629 30.9838 42.0799 31.9771C41.9975 32.9627 42.2617 34.1854 42.9353 35.3882Z" fill="#F9F9F9" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M45.9646 36.9346C45.9646 40.1386 42.8302 42.9458 38.6815 42.9458C34.5328 42.9458 31.3984 40.1386 31.3984 36.9346C31.3984 33.7307 34.5328 30.9235 38.6815 30.9235C42.8302 30.9235 45.9646 33.7307 45.9646 36.9346Z" fill="#F9F9F9" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M47.8873 23.5295C47.8873 27.5547 43.9992 31.0175 38.9358 31.0175C33.8724 31.0175 29.9844 27.5547 29.9844 23.5295C29.9844 19.5043 33.8724 16.0415 38.9358 16.0415C43.9992 16.0415 47.8873 19.5043 47.8873 23.5295Z" fill="#F9F9F9" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M33.7981 41.5241C33.0439 42.9178 30.8196 43.4856 28.6583 42.3159C26.497 41.1463 25.7558 38.9737 26.51 37.58C27.2643 36.1863 29.4885 35.6185 31.6498 36.7882C33.8111 37.9578 34.5523 40.1304 33.7981 41.5241Z" fill="#F9F9F9" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M43.4519 41.5241C44.2061 42.9178 46.4304 43.4856 48.5917 42.3159C50.753 41.1463 51.4942 38.9737 50.74 37.58C49.9857 36.1863 47.7615 35.6185 45.6002 36.7882C43.4389 37.9578 42.6977 40.1304 43.4519 41.5241Z" fill="#F9F9F9" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><ellipse cx="38.8989" cy="26.5008" rx="5.1333" ry="3.45858" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></ellipse><path d="M38.8594 27.8053V26.5701" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="35.9249" cy="22.7524" r="1.2061" fill="#272727"></circle><circle cx="41.9952" cy="22.7524" r="1.2061" fill="#272727"></circle><ellipse cx="38.8766" cy="26.2209" rx="2.00164" ry="0.935043" fill="#272727"></ellipse><path class="path" d="M33.6661 15.5413C32.2243 14.1927 29.9622 14.2683 28.6137 15.7101C27.2651 17.152 27.3407 19.414 28.7825 20.7626" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M44.2323 15.5413C45.6741 14.1927 47.9362 14.2683 49.2848 15.7101C50.6333 17.152 50.5577 19.414 49.1159 20.7626" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>                 </div>
+                                            <span class="lbl">Детские кровати</span>
+                                        </a>
+                                        <a href="https://inmood.com.ua/ru/catalog/armchairs-ru/" class="cat-link">
+                                            <div class="ico-wrp">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="78" height="58" viewBox="0 0 78 58" fill="none">
+                                                    <path class="path" d="M21.6484 37.9993V18.9993H28.9596V29.7172H49.0386V18.9993H56.3528V37.9993L21.6484 37.9993Z" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path class="path" d="M26.2266 18.4519V14.968H51.7749V18.4519" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path class="path" d="M23.9922 38.0026V43.0026" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path class="path" d="M53.9922 38.0026V43.0026" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path class="path" d="M32.0625 26.6172H45.9375" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </div>
+                                            <span class="lbl">Кресла</span>
+                                        </a>
+                                        <a href="https://inmood.com.ua/ru/catalog/matrasy-ru/" class="cat-link">
+                                            <div class="ico-wrp">
+                                                <!--?xml version="1.0" encoding="UTF-8"?--> <svg xmlns="http://www.w3.org/2000/svg" width="78" height="58" viewBox="0 0 78 58" fill="none"><path class="path" d="M47.375 23.0254H58.9705V30.5327" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M39.0609 32.6659H60.5019V41.4901H17.7656" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M17.8281 32.6659H29.0591" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M31.6094 32.9808V31.3828C31.6094 30.7425 32.2273 30.2837 32.8402 30.4688L35.5316 31.2818C36.4411 31.5565 36.4349 32.8464 35.5229 33.1124L32.8315 33.8974C32.2204 34.0757 31.6094 33.6174 31.6094 32.9808Z" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M17.5 23.288H34.6665C37.4413 23.288 40.0951 22.1518 42.0103 20.144L43.9669 18.0927C44.6325 17.3949 45.5548 17 46.5192 17V17C47.3643 17 48.1813 17.3035 48.8216 17.8551L48.9963 18.0057C49.9107 18.7936 50.4366 19.9409 50.4366 21.148V22.8497" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M38.4297 30.8495C47.8236 28.9709 43.612 19.3805 47.9922 20.0177" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><circle class="circle" cx="45.554" cy="29.4147" r="0.60871" fill="#272727"></circle><circle class="circle" cx="48.9525" cy="29.4147" r="0.60871" fill="#272727"></circle><circle class="circle" cx="52.3431" cy="29.4147" r="0.60871" fill="#272727"></circle><circle class="circle" cx="55.7337" cy="29.4147" r="0.60871" fill="#272727"></circle><circle class="circle" cx="55.7337" cy="26.1558" r="0.60871" fill="#272727"></circle><circle class="circle" cx="52.3118" cy="26.1558" r="0.60871" fill="#272727"></circle><circle class="circle" cx="48.8665" cy="26.1558" r="0.60871" fill="#272727"></circle></svg>                 </div>
+                                            <span class="lbl">Матрасы</span>
+                                        </a>
+                                        <a href="https://inmood.com.ua/ru/catalog/coffee-tables-ru/" class="cat-link">
+                                            <div class="ico-wrp">
+                                                <!--?xml version="1.0" encoding="UTF-8"?--> <svg xmlns="http://www.w3.org/2000/svg" width="78" height="58" viewBox="0 0 78 58" fill="none"><path class="path" d="M42.5625 16.0005L40.5 30.0005H51.5L49.4375 16.0005H42.5625Z" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M16.5 30.0005H62.5" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M26 34L51 34" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M23.5 43.0005V30.0005" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M53.5 43.0005V30.0005" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M29.5 28.0005C32.8137 28.0005 35.5 25.3142 35.5 22.0005H23.5C23.5 25.3142 26.1863 28.0005 29.5 28.0005Z" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M41.5 22.0005L37.5 18.0005" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="path" d="M51.2233 23.437C52.6038 23.2545 53.5749 21.9875 53.3924 20.6071C53.2099 19.2266 51.9429 18.2555 50.5625 18.438" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><circle class="path" cx="46" cy="13.5" r="1.5" fill="#272727"></circle></svg>                 </div>
+                                            <span class="lbl">Столы</span>
+                                        </a>
+                                        <a href="https://inmood.com.ua/ru/catalog/aksessuary/" class="cat-link">
+                                            <div class="ico-wrp">
+                                                <!--?xml version="1.0" encoding="UTF-8"?--> <svg xmlns="http://www.w3.org/2000/svg" width="78" height="58" viewBox="0 0 78 58" fill="none"><rect class="path" x="24.5" y="20.1155" width="29" height="22.434" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect><rect class="path" x="27.2344" y="22.8511" width="23.5283" height="16.9623" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect><path class="path" d="M31.0625 34.204L33.7244 32.0153L37.8652 35.4351L43.189 31.0577L47.4776 34.204" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><circle class="circle" cx="32.4304" cy="27.5001" r="1.36792" fill="#272727"></circle><path class="path" d="M45.2955 19.566L39.2767 13L33.2578 19.566" stroke="#272727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>                 </div>
+                                            <span class="lbl">Аксессуары</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="wrap-link-to-categories">
+                                    <a class="cat-links__link-to-categories" href="https://inmood.com.ua/ru/catalog/">Перейти к каталогу</a>
+                                </div>
+                                <div class="menu-wrapper">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul id="primary-menu" class="menu">
+                                                <li id="menu-item-2097" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2097"><a href="#">О нас</a></li>
+                                                <li id="menu-item-6176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6176"><a href="https://inmood.com.ua/ru/fabrication-mood/">Производство MOOD</a></li>
+                                                <li id="menu-item-6169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6169"><a href="https://inmood.com.ua/ru/showrooms/">Шоурумы</a></li>
+                                                <li id="menu-item-6153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6153"><a href="https://inmood.com.ua/ru/only-3-steps-to-start/">Сотрудничество</a></li>
+                                                <li id="menu-item-5803" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5795 current_page_item menu-item-5803"><a href="https://inmood.com.ua/ru/for-designers-and-architects/" aria-current="page">Дизайнерам</a></li>
+                                                <li id="menu-item-3497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3497"><a href="https://inmood.com.ua/ru/blog/">Новости</a></li>
+                                                <li id="menu-item-3493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3493"><a href="https://inmood.com.ua/ru/3d-modeli/">3D-Модели</a></li>
+                                                <li id="menu-item-6217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6217"><a href="https://inmood.com.ua/ru/faq/">FAQ</a></li>
+                                                <li id="menu-item-3494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3494"><a href="https://inmood.com.ua/ru/kontakty/">Контакты</a></li>
+                                                <li id="menu-item-6216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6216"><a rel="privacy-policy" href="https://inmood.com.ua/ru/privacy-policy/">Политика конфиденциальности</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 hidden-lg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-cart">
+                <p class="title">товары в корзине <span class="close-cart"></span></p>
+                <div id="mini_cart">
+                    <div class="d-cart-items">
+                        <p class="empty-cart-text">Корзина пуста.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
         <main class="main">
             <section class="mood-production">
                 <div class="hn_container">
@@ -29,11 +189,11 @@
                     </div>
                 </div>
             </section>
-            <section class="mood-ukrainian-furniture js-mood-ukrainian-furniture no-hidden-mobile">
+            <section class="mood-ukrainian-furniture js-mood-ukrainian-furniture no-hidden-mobile parallax">
                 <div class="hn_container">
                     <div class="mood-ukrainian-furniture__block play-animation-scroll">
-                        <h3 class="section-title">
-                            <strong class="desktop">
+                        <h3 class="section-title there-is-parallax">
+                            <strong class="desktop js-vertical-title">
                                 <span>Blanche <i>&</i></span> MOOD
                             </strong>
                             <span class="mobile">Виробництво</span>
@@ -131,11 +291,11 @@
                     </div>
                 </div>
             </div>
-            <section class="blanche-furniture">
+            <section class="blanche-furniture parallax">
                 <div class="hn_container">
                     <div class="blanche-furniture__items one">
                         <div class="blanche-furniture__item">
-                            <div class="blanche-furniture__bgImage wrap-image">
+                            <div class="blanche-furniture__bgImage wrap-image js-blanche-furniture-bgImage-one">
                                 <picture>
                                     <source srcset="images/blanche-furniture-image-1.webp" type="image/webp">
                                     <img data-src="images/blanche-furniture-image-1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
@@ -144,7 +304,7 @@
                             </div>
                         </div>
                         <div class="blanche-furniture__item">
-                            <div class="blanche-furniture__bgImage jarallax-keep-img wrap-image">
+                            <div class="blanche-furniture__bgImage wrap-image js-blanche-furniture-bgImage-two">
                                 <picture>
                                     <source srcset="images/blanche-furniture-image-2.webp" type="image/webp">
                                     <img data-src="images/blanche-furniture-image-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
@@ -153,7 +313,7 @@
                             </div>
                         </div>
                         <div class="blanche-furniture__item">
-                            <div class="blanche-furniture__bgImage wrap-image">
+                            <div class="blanche-furniture__bgImage wrap-image js-blanche-furniture-bgImage-three">
                                 <picture>
                                     <source srcset="images/blanche-furniture-image-3.webp" type="image/webp">
                                     <img data-src="images/blanche-furniture-image-3.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
@@ -165,7 +325,7 @@
                     <h2 class="section-title play-animation-scroll"><span>Меблi</span> Blanche</h2>
                     <div class="blanche-furniture__items second">
                         <div class="blanche-furniture__item">
-                            <div class="blanche-furniture__bgImage wrap-image">
+                            <div class="blanche-furniture__bgImage wrap-image js-blanche-furniture-bgImage-four">
                                 <picture>
                                     <source srcset="images/blanche-furniture-image-4.webp" type="image/webp">
                                     <img data-src="images/blanche-furniture-image-4.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
@@ -174,7 +334,7 @@
                             </div>
                         </div>
                         <div class="blanche-furniture__item">
-                            <div class="blanche-furniture__bgImage wrap-image">
+                            <div class="blanche-furniture__bgImage wrap-image js-blanche-furniture-bgImage-five">
                                 <picture>
                                     <source srcset="images/blanche-furniture-image-5.webp" type="image/webp">
                                     <img data-src="images/blanche-furniture-image-5.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
@@ -183,7 +343,7 @@
                             </div>
                         </div>
                         <div class="blanche-furniture__item">
-                            <div class="blanche-furniture__bgImage wrap-image">
+                            <div class="blanche-furniture__bgImage wrap-image js-blanche-furniture-bgImage-six">
                                 <picture>
                                     <source srcset="images/blanche-furniture-image-6.webp" type="image/webp">
                                     <img data-src="images/blanche-furniture-image-6.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
@@ -699,14 +859,15 @@
     </div>
 </footer>
     </div>
-    <script src="files/swiper/js/swiper-bundle.min.js?_v=20230914205819"></script>
-    <script src="files/swiper/js/swiper.js?_v=20230914205819"></script>
-    <script src="files/js/jquery-1.11.0.min.js?_v=20230914205819"></script>
-    <script src="js/script.min.js?_v=20230914205819"></script>
-    <script src="files/js/jquery.stellar.min.js?_v=20230914205819"></script>
+    <script src="files/js/custom-parallax.js?_v=20231004195834"></script>
+    <script src="files/swiper/js/swiper-bundle.min.js?_v=20231004195834"></script>
+    <script src="files/swiper/js/swiper.js?_v=20231004195834"></script>
+    <script src="files/js/jquery-1.11.0.min.js?_v=20231004195834"></script>
+    <script src="js/script.min.js?_v=20231004195834"></script>
+    <script src="files/js/jquery.stellar.min.js?_v=20231004195834"></script>
 
-    <script src="files/js/marquee/marquee.min.js?_v=20230914205819"></script>
-    <script src="files/js/marquee/marquee-init.js?_v=20230914205819"></script>
+    <script src="files/js/marquee/marquee.min.js?_v=20231004195834"></script>
+    <script src="files/js/marquee/marquee-init.js?_v=20231004195834"></script>
 
 </body>
 </html>
