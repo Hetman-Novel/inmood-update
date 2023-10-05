@@ -5,6 +5,8 @@ window.onload = function () {
   
 	if (parallax) {
 		const vertical_title = document.querySelector('.js-vertical-title')
+		const vertical_title_two = document.querySelector('.js-vertical-title-two')
+		const blanche_furniture = document.querySelector('.js-blanche-furniture')
 		const blanche_furniture_bgImage_one = document.querySelector('.js-blanche-furniture-bgImage-one')
 		const blanche_furniture_bgImage_two = document.querySelector('.js-blanche-furniture-bgImage-two')
 		const blanche_furniture_bgImage_three = document.querySelector('.js-blanche-furniture-bgImage-three')
@@ -12,35 +14,45 @@ window.onload = function () {
 		const blanche_furniture_bgImage_five = document.querySelector('.js-blanche-furniture-bgImage-five')
 		const blanche_furniture_bgImage_six = document.querySelector('.js-blanche-furniture-bgImage-six')
   
-		const elementsToObserve = document.querySelectorAll('.js-mood-ukrainian-furniture, .blanche-furniture')
+		const elementsToObserve = document.querySelectorAll('.js-mood-ukrainian-furniture-block, .js-mood-ukrainian-furniture-block-two, .js-mood-ukrainian-furniture-block-three, .js-mood-ukrainian-furniture, .js-blanche-furniture')
 
 		elementsToObserve.forEach((element) => {
 			const parallaxParent = element.closest('.parallax')
 			if (parallaxParent) {
-			const parallaxHeight = parallaxParent.offsetHeight
-			let thresholdSets = [];
-			for (let i = 0; i <= 1.0; i += 0.005) {
-				thresholdSets.push(i)
-			}
-			const callback = function (entries, observer) {
-				const scrollTopProcent = (window.pageYOffset / parallaxHeight) * 100
-				setMouseParallaxStyle(scrollTopProcent, element)
-			}
-			const observer = new IntersectionObserver(callback, {
-				threshold: thresholdSets,
-			})
-			observer.observe(element)
+				const parallaxHeight = parallaxParent.offsetHeight
+				let thresholdSets = [];
+				for (let i = 0; i <= 1.0; i += 0.005) {
+					thresholdSets.push(i)
+				}
+				const callback = function (entries, observer) {
+					const scrollTopProcent = (window.pageYOffset / parallaxHeight) * 100
+					setMouseParallaxStyle(scrollTopProcent, element)
+				}
+				const observer = new IntersectionObserver(callback, {
+					threshold: thresholdSets,
+				})
+				observer.observe(element)
 			}
 		})
   
 	  	function setMouseParallaxStyle(scrollTopProcent) {
-			vertical_title.parentElement.style.cssText = `transform: rotate(-90deg) translateX(+${scrollTopProcent / 3}%)`;
-			blanche_furniture_bgImage_one.parentElement.style.cssText = `transform: translateY(-${scrollTopProcent / 12}%)`;
-			blanche_furniture_bgImage_two.parentElement.style.cssText = `transform: translateY(+${scrollTopProcent / 9}%)`;
-			blanche_furniture_bgImage_three.parentElement.style.cssText = `transform: translateY(-${scrollTopProcent / 12}%)`;
-			blanche_furniture_bgImage_four.parentElement.style.cssText = `transform: translateY(-${scrollTopProcent / 15}%)`;
-			blanche_furniture_bgImage_five.parentElement.style.cssText = `transform: translateY(-${scrollTopProcent / 30}%)`;
-			blanche_furniture_bgImage_six.parentElement.style.cssText = `transform: translateY(+${scrollTopProcent / 20}%)`;
+			if (vertical_title) {
+				vertical_title.parentElement.style.cssText = `transform: rotate(-90deg) translateX(+${scrollTopProcent / 3}%)`;
+			}
+			if (vertical_title_two) {
+				vertical_title_two.parentElement.style.cssText = `transform: rotate(-90deg) translateX(+${scrollTopProcent / 3}%)`;
+			}
+			if (window.matchMedia("(min-width: 576px)").matches) {
+
+				if (blanche_furniture) {
+					blanche_furniture_bgImage_one.parentElement.style.cssText = `transform: translateY(-${scrollTopProcent / 12}%)`;
+					blanche_furniture_bgImage_two.parentElement.style.cssText = `transform: translateY(+${scrollTopProcent / 9}%)`;
+					blanche_furniture_bgImage_three.parentElement.style.cssText = `transform: translateY(-${scrollTopProcent / 12}%)`;
+					blanche_furniture_bgImage_four.parentElement.style.cssText = `transform: translateY(-${scrollTopProcent / 15}%)`;
+					blanche_furniture_bgImage_five.parentElement.style.cssText = `transform: translateY(-${scrollTopProcent / 30}%)`;
+					blanche_furniture_bgImage_six.parentElement.style.cssText = `transform: translateY(+${scrollTopProcent / 20}%)`;	
+				}
+			}
 		}
 	}
 }
