@@ -1532,6 +1532,14 @@ main.main {
   width: 100%;
 }
 
+.js-mood-ukrainian-furniture-block-three .section-title {
+  top: 480% !important;
+}
+
+.js-mood-ukrainian-furniture-block-two .section-title {
+  top: 695% !important;
+}
+
 /* Page - Mood production */
 
 .mood-production {
@@ -2631,6 +2639,10 @@ main.main {
 
 .your-mood__blockText.play-animation-scroll.show {
   opacity: 1;
+}
+
+.js-mood-ukrainian-furniture-block.parallax .section-title {
+  bottom: -200px !important;
 }
 
 /* Page - Privacy policy */
