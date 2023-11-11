@@ -263,6 +263,44 @@ new Swiper('.you-get-slider', {
    },
 });
 
+new Swiper('.page-contect__slider', {
+   //slidesPerView: 2,
+   autoHeight: false,
+   spaceBetween: 40,
+   speed: 800,
+   effect: 'slide',
+
+   breakpoints: {
+      0: {
+         slidesPerView: 1,
+         spaceBetween: 20,
+         autoHeight: false,
+         slidesPerColumn: 2,
+         grid: {
+            rows: 2,
+         },
+      },
+      576: {
+         slidesPerView: 1,
+         spaceBetween: 40,
+         autoHeight: false,
+         slidesPerColumn: 2,
+         grid: {
+            rows: 2,
+         },
+      },
+      860: {
+         slidesPerView: 2,
+         slidesPerGroup: 1,
+         spaceBetween: 40,
+         autoHeight: true,
+         grid: {
+            rows: 1,
+         },
+      }
+   },
+});
+
 
 var scrollEvents = ['wheel', 'mousewheel']
 function freezeScroll() {
